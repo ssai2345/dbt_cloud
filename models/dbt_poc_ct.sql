@@ -1,1 +1,0 @@
-SELECT * FROM `data-vault-dbt-configuration.dbt_dvlt_dts.CT_1000` LIMIT 1000

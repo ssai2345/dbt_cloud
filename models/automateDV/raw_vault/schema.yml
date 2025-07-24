@@ -1,0 +1,64 @@
+version: 2
+
+models:
+  - name: adv_hub_customer
+    description: Raw Vault hub for customer entity.
+    columns:
+      - name: CUSTOMER_PK
+        description: Hash representation of the business key.
+      - name: CUSTOMER_ID
+        description: Business key.
+      - name: LOAD_DATETIME
+        description: Load datetime metadata column according to DV standards.
+      - name: RECORD_SOURCE
+        description: Record source metadata columns according to DV standards.
+  - name: adv_hub_order
+    description: Raw Vault hub for order entity.
+    columns:
+      - name: ORDER_PK
+        description: Hash representation of the business key.
+      - name: ORDER_ID
+        description: Business key.
+      - name: LOAD_DATETIME
+        description: Load datetime metadata column according to DV standards.
+      - name: RECORD_SOURCE
+        description: Record source metadata columns according to DV standards.
+  - name: adv_link_customer_order
+    description: Raw Vault link connecting Customer and Orders.
+    columns:
+      - name: CUSTOMER_ORDER_PK
+        description: Primary key of the link. Hash representation of concatenated foreign keys.
+      - name: CUSTOMER_PK
+        description: Hash representation of the business key.
+      - name: ORDER_PK
+        description: Hash representation of the business key.
+      - name: LOAD_DATETIME
+        description: Load datetime metadata column according to DV standards.
+      - name: RECORD_SOURCE
+        description: Record source metadata columns according to DV standards.
+  - name: adv_sat_customer
+    description: Raw Vault satellite for Account entity.
+    columns:
+      - name: CUSTOMER_PK
+        description: Hash representation of the business key.
+      - name: HASHDIFF
+        description: Hash representation of all payload columns according to DV standards.
+      - name: EFFECTIVE_FROM
+        description: Applied (business) date standard columns.
+      - name: LOAD_DATETIME
+        description: Load datetime metadata column according to DV standards.
+      - name: RECORD_SOURCE
+        description: Record source metadata columns according to DV standards.
+  - name: adv_sat_order
+    description: Raw Vault satellite for Account entity.
+    columns:
+      - name: ORDER_PK
+        description: Hash representation of the business key.
+      - name: HASHDIFF
+        description: Hash representation of all payload columns according to DV standards.
+      - name: EFFECTIVE_FROM
+        description: Applied (business) date standard columns.
+      - name: LOAD_DATETIME
+        description: Load datetime metadata column according to DV standards.
+      - name: RECORD_SOURCE
+        description: Record source metadata columns according to DV standards.

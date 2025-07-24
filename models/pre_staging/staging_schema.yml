@@ -1,0 +1,11 @@
+version: 2
+ 
+models:
+  - name: staging_customer
+    description: Persistent staging area model for salesforce Accounts source table.
+  - name: staging_payment
+    description: Persistent staging area model for salesforce Contacts source table.
+  - name: staging_product
+    description: Persistent staging area model for salesforce Leads source table.
+  - name: staging_order
+    description: Persistent staging area model for salesforce Opportunities source table.

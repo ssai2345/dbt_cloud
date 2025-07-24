@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: adv__stg_BQ_customer
+    description: Stage model for pre Data Vault calculations
+  - name: adv__stg_BQ_order
+    description: Stage model for pre Data Vault calculations

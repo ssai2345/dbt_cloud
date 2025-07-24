@@ -1,0 +1,17 @@
+version: 2
+ 
+ 
+sources:
+  - name: bigquery
+    description: staging raw order data
+    database: data-vault-dbt-configuration
+    schema: dbt_dvlt_dts
+    tables:
+      - name: order_raw
+        description: all company orders
+      - name: product_raw
+        description: all product data
+      - name: payment_raw
+        description: all payment related data
+      - name: customer_raw
+        description: all customer data
