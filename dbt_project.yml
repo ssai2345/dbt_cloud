@@ -40,4 +40,13 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
-      +dataset: raw_vault_NW
+  
+    seeds:
+      self_automate_NW:
+      hubs:
+        header: true
+      links:
+        header: true
+      satellites:
+        header: true
+
