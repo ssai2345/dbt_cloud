@@ -1,0 +1,82 @@
+version: 2
+
+sources:
+  - name: categories
+    database: data-vault-dbt-configuration
+    schema: dbt_NorthWind_dvlt
+    tables:
+      - name: SA_categories
+
+  - name: customer_customer_demo
+    database: data-vault-dbt-configuration
+    schema: dbt_NorthWind_dvlt
+    tables:
+      - name: SA_customer_customer_demo
+
+  - name: customer_demographics
+    database: data-vault-dbt-configuration
+    schema: dbt_NorthWind_dvlt
+    tables:
+      - name: SA_customer_demographics
+
+  - name: customers
+    database: data-vault-dbt-configuration
+    schema: dbt_NorthWind_dvlt
+    tables:
+      - name: SA_customers
+
+  - name: employees
+    database: data-vault-dbt-configuration
+    schema: dbt_NorthWind_dvlt
+    tables:
+      - name: SA_employees
+
+  - name: employees_territories
+    database: data-vault-dbt-configuration
+    schema: dbt_NorthWind_dvlt
+    tables:
+      - name: SA_employees_territories
+
+  - name: order_details
+    database: data-vault-dbt-configuration
+    schema: dbt_NorthWind_dvlt
+    tables:
+      - name: SA_order_details
+
+  - name: orders
+    database: data-vault-dbt-configuration
+    schema: dbt_NorthWind_dvlt
+    tables:
+      - name: SA_order_customer_employee
+      - name: SA_orders
+
+  - name: products
+    database: data-vault-dbt-configuration
+    schema: dbt_NorthWind_dvlt
+    tables:
+      - name: SA_products
+
+  - name: regions
+    database: data-vault-dbt-configuration
+    schema: dbt_NorthWind_dvlt
+    tables:
+      - name: SA_regions
+
+  - name: shippers
+    database: data-vault-dbt-configuration
+    schema: dbt_NorthWind_dvlt
+    tables:
+      - name: SA_shippers
+
+  - name: supplier
+    database: data-vault-dbt-configuration
+    schema: dbt_NorthWind_dvlt
+    tables:
+      - name: SA_supplier
+
+  - name: territories
+    database: data-vault-dbt-configuration
+    schema: dbt_NorthWind_dvlt
+    tables:
+      - name: SA_territories
+
