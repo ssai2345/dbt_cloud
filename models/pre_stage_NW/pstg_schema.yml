@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: pstg_BQ_suppliers
+    description: Persistent staging area model for BQ Suppliers source table.
+  - name: pstg_BQ_products
+    description: Persistent staging area model for BQ Products source table.
+  - name: pstg_BQ_order_details
+    description: Persistent staging area model for BQ order details source table.
+  - name: pstg_BQ_categories
+    description: Persistent staging area model for BQ product categories source table.
+  - name: pstg_BQ_customers
+    description: Persistent staging area model for BQ Suppliers source table.
+  - name: pstg_BQ_orders
+    description: Persistent staging area model for BQ Orders source table.
+  - name: pstg_BQ_employees
+    description: Persistent staging area model for BQ employees source table.
+  - name: pstg_BQ_Cust_Cust_demo
+    description: Persistent staging area model for BQ customer demo source table.
+  - name: pstg_BQ_customer_demographics
+    description: Persistent staging area model for BQ customer demographics source table.
+  - name: pstg_BQ_shippers
+    description: Persistent staging area model for BQ shippers source table.
+  - name: pstg_BQ_employee_ter
+    description: Persistent staging area model for BQ employee territories source table.
+  - name: pstg_BQ_regions
+    description: Persistent staging area model for BQ regions source table.
+  - name: pstg_BQ_territories
+    description: Persistent staging area model for BQ territories source table.
