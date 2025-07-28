@@ -5,5 +5,5 @@
     business_key='employee_id',
     source_name='dbt_NorthWind_dvlt',
     source_table='dbt_NorthWind_dvlt.employees',
-    target_schema='SA_target'
+    target_schema='dbt_NorthWind_dvlt'
 ) }}
