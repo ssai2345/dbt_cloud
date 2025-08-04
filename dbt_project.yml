@@ -40,11 +40,11 @@ models:
   DV_Northwind_POC_SA:
     self_automate_NW:
       hubs:
-        +materialized: table
+        +materialized: view
       links:
-        +materialized: incremental
+        +materialized: view
       satellites:
-        +materialized: incremental
+        +materialized: view
 
 seeds:
   DV_Northwind_POC_SA:

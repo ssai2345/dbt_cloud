@@ -1,4 +1,4 @@
-{{ config(materialized='incremental') }}
+{{ config(materialized='view') }}
 
 {{ generate_hub(
     table_name='employees',
