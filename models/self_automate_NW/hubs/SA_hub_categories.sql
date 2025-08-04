@@ -1,9 +1,9 @@
 {{ config(materialized='incremental') }}
 
 {{ generate_hub(
-    table_name='SA_categories',
+    table_name='bigquery',
     business_key='category_id',
-    source_name='dbt_NorthWind_dvlt',
-    source_table='dbt_NorthWind_dvlt.categories',
-    target_schema='dbt_NorthWind_dvlt'
+    source_name='bigquery',
+    source_table='categories',
+    target_schema='SA_testload'
 ) }}

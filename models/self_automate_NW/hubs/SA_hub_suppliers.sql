@@ -3,7 +3,7 @@
 {{ generate_hub(
     table_name='SA_suppliers',
     business_key='supplier_id',
-    source_name='dbt_NorthWind_dvlt',
-    source_table='dbt_NorthWind_dvlt.suppliers',
-    target_schema='dbt_NorthWind_dvlt'
+    source_name='bigquery',
+    source_table='suppliers',
+    target_schema='SA_testload'
 ) }}

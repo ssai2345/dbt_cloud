@@ -1,0 +1,137 @@
+raw_vault:
+  hubs:
+  - name: SA_hub_order_details
+    business_key: order_id
+  - name: SA_hub_shippers
+    business_key: shipper_id
+  - name: SA_hub_orders
+    business_key: order_id
+  - name: SA_hub_regions
+    business_key: region_id
+  - name: SA_hub_supplier
+    business_key: supplier_id
+  - name: SA_hub_products
+    business_key: product_id
+  - name: SA_hub_categories
+    business_key: category_id
+  - name: SA_hub_territories
+    business_key: territory_id
+  - name: SA_hub_customers
+    business_key: customer_id
+  - name: SA_hub_employees
+    business_key: employee_id
+  - name: SA_hub_customer_demographics
+    business_key: customer_type_id
+  satellites:
+  - name: SA_sat_order_details
+    business_key: order_id
+    descriptive_fields:
+    - product_id
+    - unit_price
+    - quantity
+    - discount
+  - name: SA_sat_shippers
+    business_key: shipper_id
+    descriptive_fields:
+    - company_name
+    - phone
+  - name: SA_sat_orders
+    business_key: order_id
+    descriptive_fields:
+    - customer_id
+    - employee_id
+    - order_date
+    - required_date
+    - shipped_date
+    - ship_via
+    - freight
+    - ship_name
+    - ship_city
+    - ship_region
+    - ship_postal_code
+    - ship_country
+  - name: SA_sat_regions
+    business_key: region_id
+    descriptive_fields:
+    - region_description
+  - name: SA_sat_supplier
+    business_key: supplier_id
+    descriptive_fields:
+    - company_name
+    - contact_name
+    - contact_title
+    - address
+    - city
+    - region
+    - postal_code
+    - country
+    - phone
+    - fax
+    - home_page
+  - name: SA_sat_products
+    business_key: product_id
+    descriptive_fields:
+    - product_name
+    - supplier_id
+    - category_id
+    - quantity_per_unit
+    - unit_price
+    - units_in_stock
+    - units_on_order
+    - reorder_level
+    - discontinued
+  - name: SA_sat_categories
+    business_key: category_id
+    descriptive_fields:
+    - category_name
+    - description
+    - picture
+  - name: SA_sat_territories
+    business_key: territory_id
+    descriptive_fields:
+    - territory_description
+    - region_id
+  - name: SA_sat_customers
+    business_key: customer_id
+    descriptive_fields:
+    - customer_name
+    - contact_name
+    - contact_title
+    - address
+    - city
+    - region
+    - postal_code
+    - country
+    - phone
+    - fax
+  - name: SA_sat_employees
+    business_key: employee_id
+    descriptive_fields:
+    - last_name
+    - first_name
+    - title
+    - title_of_courtesy
+    - birth_date
+    - hire_date
+    - address
+    - city
+    - region
+    - postal_code
+    - country
+    - home_phone
+    - extension
+    - photo
+    - notes
+    - reports_to
+    - photo_path
+  - name: SA_sat_customer_demographics
+    business_key: customer_type_id
+    descriptive_fields:
+    - customer_desc
+  links:
+  - name: SA_links_employees_territories
+    business_key: employee_id|territory_id
+  - name: SA_links_customer_customer_demo
+    business_key: customer_id|customer_type_id
+  - name: SA_links_order_customer_employee
+    business_key: order_id|customer_id|employee_id

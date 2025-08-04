@@ -2,7 +2,7 @@
 {{ log("Generating link for " ~ table_name, info=True) }}
 
 {{ config(
-    materialized='incremental',
+    materialized='table',
     schema=target_schema
 ) }}
 
@@ -16,7 +16,7 @@ with source_data as (
         {% endfor %}
         current_timestamp as load_date,
         '{{ source_table }}' as record_source
-    from {{ source_table }}
+from {{ source(source_name,source_table) }}
 )
 
 

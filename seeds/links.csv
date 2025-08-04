@@ -1,4 +1,4 @@
 link_name,business_keys,source_table
-employees_territories,employee_id|territory_id,employees_territories
-customer_customer_demo,customer_id|customer_type_id,customer_customer_demo
-order_customer_employee,order_id|customer_id|employee_id,orders
+employees_territories,employee_id|territory_id,bigquery
+customer_customer_demo,customer_id|customer_type_id,bigquery
+order_customer_employee,order_id|customer_id|employee_id,bigquery
